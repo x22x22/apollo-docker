@@ -33,7 +33,7 @@ RUN \
 ADD . /apollo-portal-server/
 COPY --from=Jar /tmp/apollo-portal.jar /apollo-portal-server/apollo-portal.jar 
 
-RUN chmod 755 /apollo-portal-server/scripts/startup-kubernetes.sh\
+RUN chmod 755 /apollo-portal-server/scripts/startup-kubernetes.sh
 
 ENV APOLLO_PORTAL_SERVICE_NAME="service-apollo-portal-server.sre"
 
